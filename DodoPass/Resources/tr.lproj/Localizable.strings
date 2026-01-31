@@ -1,0 +1,233 @@
+/* 
+  Localizable.strings
+  DodoPass - Turkish
+*/
+
+// MARK: - General
+"app.name" = "DodoPass";
+"general.cancel" = "İptal";
+"general.save" = "Kaydet";
+"general.delete" = "Sil";
+"general.edit" = "Düzenle";
+"general.done" = "Tamam";
+"general.close" = "Kapat";
+"general.search" = "Ara";
+"general.copy" = "Kopyala";
+"general.copied" = "Kopyalandı";
+"general.show" = "Göster";
+"general.hide" = "Gizle";
+"general.add" = "Ekle";
+"general.remove" = "Kaldır";
+"general.settings" = "Ayarlar";
+"general.ok" = "Tamam";
+"general.error" = "Hata";
+"general.warning" = "Uyarı";
+"general.success" = "Başarılı";
+
+// MARK: - Lock Screen
+"lock.title" = "DodoPass";
+"lock.subtitle" = "Ana şifrenizi girin";
+"lock.password.placeholder" = "Ana şifre";
+"lock.unlock" = "Kilidi Aç";
+"lock.touchid" = "Touch ID ile Aç";
+"lock.touchid.reason" = "Kasanızın kilidini açın";
+"lock.error.invalid" = "Geçersiz şifre";
+"lock.error.touchid" = "Touch ID başarısız";
+
+// MARK: - Onboarding
+"onboarding.welcome.title" = "DodoPass'a Hoş Geldiniz";
+"onboarding.welcome.subtitle" = "macOS için güvenli şifre yöneticisi";
+"onboarding.password.title" = "Ana Şifre Oluşturun";
+"onboarding.password.subtitle" = "Bu şifre tüm verilerinizi koruyacak";
+"onboarding.password.placeholder" = "Ana şifre girin";
+"onboarding.password.confirm" = "Ana şifreyi doğrulayın";
+"onboarding.password.hint" = "Şifre ipucu (isteğe bağlı)";
+"onboarding.password.strength.weak" = "Zayıf";
+"onboarding.password.strength.fair" = "Orta";
+"onboarding.password.strength.good" = "İyi";
+"onboarding.password.strength.strong" = "Güçlü";
+"onboarding.touchid.title" = "Touch ID'yi Etkinleştirin";
+"onboarding.touchid.subtitle" = "Parmak izinizle hızlıca kilidi açın";
+"onboarding.touchid.enable" = "Touch ID'yi Etkinleştir";
+"onboarding.touchid.skip" = "Şimdilik Atla";
+"onboarding.icloud.title" = "iCloud Senkronizasyonu";
+"onboarding.icloud.subtitle" = "Kasanızı cihazlar arasında senkronize edin";
+"onboarding.icloud.enable" = "iCloud Senkronizasyonunu Etkinleştir";
+"onboarding.icloud.skip" = "Yalnızca yerel tut";
+"onboarding.complete.title" = "Hazırsınız!";
+"onboarding.complete.subtitle" = "Kasanız kullanıma hazır";
+"onboarding.complete.start" = "Başla";
+"onboarding.next" = "İleri";
+"onboarding.back" = "Geri";
+
+// MARK: - Sidebar
+"sidebar.all" = "Tüm Öğeler";
+"sidebar.favorites" = "Favoriler";
+"sidebar.logins" = "Girişler";
+"sidebar.securenotes" = "Güvenli Notlar";
+"sidebar.creditcards" = "Kredi Kartları";
+"sidebar.identities" = "Kimlikler";
+"sidebar.tags" = "Etiketler";
+"sidebar.trash" = "Çöp Kutusu";
+
+// MARK: - Item Types
+"item.type.login" = "Giriş";
+"item.type.securenote" = "Güvenli Not";
+"item.type.creditcard" = "Kredi Kartı";
+"item.type.identity" = "Kimlik";
+
+// MARK: - Item List
+"itemlist.empty.title" = "Henüz öğe yok";
+"itemlist.empty.subtitle" = "Başlamak için ilk öğenizi ekleyin";
+"itemlist.search.placeholder" = "Öğelerde ara...";
+"itemlist.search.noresults" = "Sonuç bulunamadı";
+
+// MARK: - Item Detail
+"itemdetail.title" = "Başlık";
+"itemdetail.username" = "Kullanıcı Adı";
+"itemdetail.password" = "Şifre";
+"itemdetail.website" = "Web Sitesi";
+"itemdetail.websites" = "Web Sitesi URL'leri";
+"itemdetail.notes" = "Notlar";
+"itemdetail.tags" = "Etiketler";
+"itemdetail.created" = "Oluşturulma";
+"itemdetail.modified" = "Değiştirilme";
+"itemdetail.favorite" = "Favori";
+"itemdetail.copypassword" = "Şifreyi Kopyala";
+"itemdetail.copyusername" = "Kullanıcı Adını Kopyala";
+"itemdetail.openurl" = "URL'yi Aç";
+"itemdetail.passwordhistory" = "Şifre Geçmişi";
+"itemdetail.passwordhistory.count" = "%d önceki şifre";
+"itemdetail.otp" = "Tek Kullanımlık Şifre";
+
+// MARK: - Item Editor
+"itemeditor.new.login" = "Yeni giriş";
+"itemeditor.new.securenote" = "Yeni güvenli not";
+"itemeditor.new.creditcard" = "Yeni kredi kartı";
+"itemeditor.new.identity" = "Yeni kimlik";
+"itemeditor.edit.login" = "Girişi düzenle";
+"itemeditor.edit.securenote" = "Güvenli notu düzenle";
+"itemeditor.edit.creditcard" = "Kredi kartını düzenle";
+"itemeditor.edit.identity" = "Kimliği düzenle";
+"itemeditor.title.placeholder" = "Başlık girin";
+"itemeditor.username.placeholder" = "Kullanıcı adı veya e-posta girin";
+"itemeditor.password.placeholder" = "Şifre girin";
+"itemeditor.url.placeholder" = "https://";
+"itemeditor.addurl" = "URL Ekle";
+"itemeditor.addtag" = "Etiket ekle";
+
+// MARK: - Credit Card
+"creditcard.cardholder" = "Kart Sahibi Adı";
+"creditcard.number" = "Kart Numarası";
+"creditcard.expiration" = "Son Kullanma";
+"creditcard.cvv" = "CVV";
+"creditcard.pin" = "PIN";
+"creditcard.type" = "Tür";
+"creditcard.billingaddress" = "Fatura Adresi";
+
+// MARK: - Identity
+"identity.firstname" = "Ad";
+"identity.lastname" = "Soyad";
+"identity.fullname" = "Tam Ad";
+"identity.email" = "E-posta";
+"identity.phone" = "Telefon";
+"identity.dateofbirth" = "Doğum Tarihi";
+"identity.ssn" = "TC Kimlik No";
+"identity.passport" = "Pasaport";
+"identity.driverlicense" = "Ehliyet";
+"identity.address" = "Adres";
+"identity.company" = "Şirket";
+"identity.jobtitle" = "Unvan";
+
+// MARK: - Secure Note
+"securenote.content" = "İçerik";
+"securenote.nocontent" = "İçerik yok";
+
+// MARK: - Password Generator
+"generator.title" = "Şifre Oluşturucu";
+"generator.length" = "Uzunluk";
+"generator.uppercase" = "Büyük Harf (A-Z)";
+"generator.lowercase" = "Küçük Harf (a-z)";
+"generator.numbers" = "Rakamlar (0-9)";
+"generator.symbols" = "Semboller (!@#$%)";
+"generator.generate" = "Oluştur";
+"generator.copy" = "Kopyala";
+"generator.use" = "Şifreyi Kullan";
+
+// MARK: - Settings
+"settings.title" = "Ayarlar";
+"settings.general" = "Genel";
+"settings.security" = "Güvenlik";
+"settings.sync" = "Senkronizasyon";
+"settings.about" = "Hakkında";
+"settings.general.language" = "Dil";
+"settings.general.theme" = "Tema";
+"settings.general.theme.dark" = "Koyu";
+"settings.general.theme.light" = "Açık";
+"settings.general.theme.system" = "Sistem";
+"settings.security.touchid" = "Touch ID";
+"settings.security.touchid.enable" = "Touch ID'yi Etkinleştir";
+"settings.security.autolock" = "Otomatik Kilitleme";
+"settings.security.autolock.immediately" = "Hemen";
+"settings.security.autolock.1min" = "1 dakika sonra";
+"settings.security.autolock.5min" = "5 dakika sonra";
+"settings.security.autolock.15min" = "15 dakika sonra";
+"settings.security.autolock.1hour" = "1 saat sonra";
+"settings.security.autolock.never" = "Asla";
+"settings.security.clipboard" = "Panoyu Temizle";
+"settings.security.clipboard.30sec" = "30 saniye sonra";
+"settings.security.clipboard.1min" = "1 dakika sonra";
+"settings.security.clipboard.never" = "Asla";
+"settings.security.changepassword" = "Ana Şifreyi Değiştir";
+"settings.sync.icloud" = "iCloud Senkronizasyonu";
+"settings.sync.icloud.enable" = "iCloud Senkronizasyonunu Etkinleştir";
+"settings.sync.status" = "Senkronizasyon Durumu";
+"settings.sync.status.uptodate" = "Güncel";
+"settings.sync.status.syncing" = "Senkronize ediliyor...";
+"settings.sync.status.offline" = "Çevrimdışı";
+"settings.sync.lastsync" = "Son senkronizasyon";
+"settings.about.version" = "Sürüm";
+"settings.about.github" = "GitHub";
+"settings.about.support" = "Destek";
+
+// MARK: - Import/Export
+"importexport.export" = "Dışa Aktar";
+"importexport.import" = "İçe Aktar";
+"importexport.export.title" = "Kasayı Dışa Aktar";
+"importexport.export.format" = "Format";
+"importexport.export.encrypted" = "DodoPass Şifreli";
+"importexport.export.json" = "DodoPass JSON";
+"importexport.export.csv" = "CSV (Şifresiz)";
+"importexport.export.password" = "Şifreleme Parolası";
+"importexport.export.warning" = "CSV dışa aktarımı şifrelenmemiştir. Yalnızca taşıma için kullanın.";
+"importexport.import.title" = "Veri İçe Aktar";
+"importexport.import.format" = "Format";
+"importexport.import.1password" = "1Password CSV";
+"importexport.import.chrome" = "Chrome CSV";
+"importexport.import.success" = "%d öğe başarıyla içe aktarıldı";
+"importexport.import.error" = "İçe aktarma başarısız";
+
+// MARK: - Delete Confirmation
+"delete.title" = "Öğeyi Sil?";
+"delete.message" = "Bu işlem geri alınamaz.";
+"delete.confirm" = "Sil";
+
+// MARK: - Quick Switcher
+"quickswitcher.placeholder" = "Öğelerde ara...";
+"quickswitcher.hint" = "Aramak için yazın, ↑↓ gezinme, ↵ seçme";
+
+// MARK: - Errors
+"error.vault.locked" = "Kasa kilitli";
+"error.vault.corrupted" = "Kasa verisi bozuk";
+"error.vault.notfound" = "Kasa bulunamadı";
+"error.network.offline" = "İnternet bağlantısı yok";
+"error.sync.conflict" = "Senkronizasyon çakışması tespit edildi";
+"error.sync.failed" = "Senkronizasyon başarısız";
+
+// MARK: - Icon Picker
+"iconpicker.symbol" = "Sembol";
+"iconpicker.color" = "Renk";
+
+// MARK: - Clipboard
+"clipboard.cleared" = "Pano temizlendi";
+"clipboard.copied" = "Panoya kopyalandı";

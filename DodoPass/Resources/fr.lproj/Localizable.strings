@@ -1,0 +1,233 @@
+/* 
+  Localizable.strings
+  DodoPass - French
+*/
+
+// MARK: - General
+"app.name" = "DodoPass";
+"general.cancel" = "Annuler";
+"general.save" = "Enregistrer";
+"general.delete" = "Supprimer";
+"general.edit" = "Modifier";
+"general.done" = "Terminé";
+"general.close" = "Fermer";
+"general.search" = "Rechercher";
+"general.copy" = "Copier";
+"general.copied" = "Copié";
+"general.show" = "Afficher";
+"general.hide" = "Masquer";
+"general.add" = "Ajouter";
+"general.remove" = "Retirer";
+"general.settings" = "Paramètres";
+"general.ok" = "OK";
+"general.error" = "Erreur";
+"general.warning" = "Attention";
+"general.success" = "Succès";
+
+// MARK: - Lock Screen
+"lock.title" = "DodoPass";
+"lock.subtitle" = "Entrez votre mot de passe principal";
+"lock.password.placeholder" = "Mot de passe principal";
+"lock.unlock" = "Déverrouiller";
+"lock.touchid" = "Déverrouiller avec Touch ID";
+"lock.touchid.reason" = "Déverrouillez votre coffre-fort";
+"lock.error.invalid" = "Mot de passe invalide";
+"lock.error.touchid" = "Échec de Touch ID";
+
+// MARK: - Onboarding
+"onboarding.welcome.title" = "Bienvenue dans DodoPass";
+"onboarding.welcome.subtitle" = "Un gestionnaire de mots de passe sécurisé pour macOS";
+"onboarding.password.title" = "Créer un mot de passe principal";
+"onboarding.password.subtitle" = "Ce mot de passe protégera toutes vos données";
+"onboarding.password.placeholder" = "Entrez le mot de passe principal";
+"onboarding.password.confirm" = "Confirmez le mot de passe principal";
+"onboarding.password.hint" = "Indice de mot de passe (optionnel)";
+"onboarding.password.strength.weak" = "Faible";
+"onboarding.password.strength.fair" = "Moyen";
+"onboarding.password.strength.good" = "Bon";
+"onboarding.password.strength.strong" = "Fort";
+"onboarding.touchid.title" = "Activer Touch ID";
+"onboarding.touchid.subtitle" = "Déverrouillez rapidement avec votre empreinte digitale";
+"onboarding.touchid.enable" = "Activer Touch ID";
+"onboarding.touchid.skip" = "Passer pour l'instant";
+"onboarding.icloud.title" = "Synchronisation iCloud";
+"onboarding.icloud.subtitle" = "Synchronisez votre coffre-fort sur tous vos appareils";
+"onboarding.icloud.enable" = "Activer la synchronisation iCloud";
+"onboarding.icloud.skip" = "Garder en local uniquement";
+"onboarding.complete.title" = "Vous êtes prêt !";
+"onboarding.complete.subtitle" = "Votre coffre-fort est prêt à être utilisé";
+"onboarding.complete.start" = "Commencer";
+"onboarding.next" = "Suivant";
+"onboarding.back" = "Retour";
+
+// MARK: - Sidebar
+"sidebar.all" = "Tous les éléments";
+"sidebar.favorites" = "Favoris";
+"sidebar.logins" = "Identifiants";
+"sidebar.securenotes" = "Notes sécurisées";
+"sidebar.creditcards" = "Cartes bancaires";
+"sidebar.identities" = "Identités";
+"sidebar.tags" = "Étiquettes";
+"sidebar.trash" = "Corbeille";
+
+// MARK: - Item Types
+"item.type.login" = "Identifiant";
+"item.type.securenote" = "Note sécurisée";
+"item.type.creditcard" = "Carte bancaire";
+"item.type.identity" = "Identité";
+
+// MARK: - Item List
+"itemlist.empty.title" = "Aucun élément";
+"itemlist.empty.subtitle" = "Ajoutez votre premier élément pour commencer";
+"itemlist.search.placeholder" = "Rechercher des éléments...";
+"itemlist.search.noresults" = "Aucun résultat trouvé";
+
+// MARK: - Item Detail
+"itemdetail.title" = "Titre";
+"itemdetail.username" = "Nom d'utilisateur";
+"itemdetail.password" = "Mot de passe";
+"itemdetail.website" = "Site web";
+"itemdetail.websites" = "URLs des sites web";
+"itemdetail.notes" = "Notes";
+"itemdetail.tags" = "Étiquettes";
+"itemdetail.created" = "Créé";
+"itemdetail.modified" = "Modifié";
+"itemdetail.favorite" = "Favori";
+"itemdetail.copypassword" = "Copier le mot de passe";
+"itemdetail.copyusername" = "Copier le nom d'utilisateur";
+"itemdetail.openurl" = "Ouvrir l'URL";
+"itemdetail.passwordhistory" = "Historique des mots de passe";
+"itemdetail.passwordhistory.count" = "%d mots de passe précédents";
+"itemdetail.otp" = "Mot de passe à usage unique";
+
+// MARK: - Item Editor
+"itemeditor.new.login" = "Nouvel identifiant";
+"itemeditor.new.securenote" = "Nouvelle note sécurisée";
+"itemeditor.new.creditcard" = "Nouvelle carte bancaire";
+"itemeditor.new.identity" = "Nouvelle identité";
+"itemeditor.edit.login" = "Modifier l'identifiant";
+"itemeditor.edit.securenote" = "Modifier la note sécurisée";
+"itemeditor.edit.creditcard" = "Modifier la carte bancaire";
+"itemeditor.edit.identity" = "Modifier l'identité";
+"itemeditor.title.placeholder" = "Entrez le titre";
+"itemeditor.username.placeholder" = "Entrez le nom d'utilisateur ou l'email";
+"itemeditor.password.placeholder" = "Entrez le mot de passe";
+"itemeditor.url.placeholder" = "https://";
+"itemeditor.addurl" = "Ajouter une URL";
+"itemeditor.addtag" = "Ajouter une étiquette";
+
+// MARK: - Credit Card
+"creditcard.cardholder" = "Nom du titulaire";
+"creditcard.number" = "Numéro de carte";
+"creditcard.expiration" = "Expiration";
+"creditcard.cvv" = "CVV";
+"creditcard.pin" = "Code PIN";
+"creditcard.type" = "Type";
+"creditcard.billingaddress" = "Adresse de facturation";
+
+// MARK: - Identity
+"identity.firstname" = "Prénom";
+"identity.lastname" = "Nom";
+"identity.fullname" = "Nom complet";
+"identity.email" = "Email";
+"identity.phone" = "Téléphone";
+"identity.dateofbirth" = "Date de naissance";
+"identity.ssn" = "Numéro de sécurité sociale";
+"identity.passport" = "Passeport";
+"identity.driverlicense" = "Permis de conduire";
+"identity.address" = "Adresse";
+"identity.company" = "Entreprise";
+"identity.jobtitle" = "Fonction";
+
+// MARK: - Secure Note
+"securenote.content" = "Contenu";
+"securenote.nocontent" = "Aucun contenu";
+
+// MARK: - Password Generator
+"generator.title" = "Générateur de mot de passe";
+"generator.length" = "Longueur";
+"generator.uppercase" = "Majuscules (A-Z)";
+"generator.lowercase" = "Minuscules (a-z)";
+"generator.numbers" = "Chiffres (0-9)";
+"generator.symbols" = "Symboles (!@#$%)";
+"generator.generate" = "Générer";
+"generator.copy" = "Copier";
+"generator.use" = "Utiliser ce mot de passe";
+
+// MARK: - Settings
+"settings.title" = "Paramètres";
+"settings.general" = "Général";
+"settings.security" = "Sécurité";
+"settings.sync" = "Synchronisation";
+"settings.about" = "À propos";
+"settings.general.language" = "Langue";
+"settings.general.theme" = "Thème";
+"settings.general.theme.dark" = "Sombre";
+"settings.general.theme.light" = "Clair";
+"settings.general.theme.system" = "Système";
+"settings.security.touchid" = "Touch ID";
+"settings.security.touchid.enable" = "Activer Touch ID";
+"settings.security.autolock" = "Verrouillage automatique";
+"settings.security.autolock.immediately" = "Immédiatement";
+"settings.security.autolock.1min" = "Après 1 minute";
+"settings.security.autolock.5min" = "Après 5 minutes";
+"settings.security.autolock.15min" = "Après 15 minutes";
+"settings.security.autolock.1hour" = "Après 1 heure";
+"settings.security.autolock.never" = "Jamais";
+"settings.security.clipboard" = "Effacer le presse-papiers";
+"settings.security.clipboard.30sec" = "Après 30 secondes";
+"settings.security.clipboard.1min" = "Après 1 minute";
+"settings.security.clipboard.never" = "Jamais";
+"settings.security.changepassword" = "Changer le mot de passe principal";
+"settings.sync.icloud" = "Synchronisation iCloud";
+"settings.sync.icloud.enable" = "Activer la synchronisation iCloud";
+"settings.sync.status" = "État de la synchronisation";
+"settings.sync.status.uptodate" = "À jour";
+"settings.sync.status.syncing" = "Synchronisation...";
+"settings.sync.status.offline" = "Hors ligne";
+"settings.sync.lastsync" = "Dernière synchronisation";
+"settings.about.version" = "Version";
+"settings.about.github" = "GitHub";
+"settings.about.support" = "Support";
+
+// MARK: - Import/Export
+"importexport.export" = "Exporter";
+"importexport.import" = "Importer";
+"importexport.export.title" = "Exporter le coffre-fort";
+"importexport.export.format" = "Format";
+"importexport.export.encrypted" = "DodoPass chiffré";
+"importexport.export.json" = "DodoPass JSON";
+"importexport.export.csv" = "CSV (Non chiffré)";
+"importexport.export.password" = "Mot de passe de chiffrement";
+"importexport.export.warning" = "L'export CSV n'est pas chiffré. Utilisez-le uniquement pour la migration.";
+"importexport.import.title" = "Importer des données";
+"importexport.import.format" = "Format";
+"importexport.import.1password" = "1Password CSV";
+"importexport.import.chrome" = "Chrome CSV";
+"importexport.import.success" = "%d éléments importés avec succès";
+"importexport.import.error" = "Échec de l'importation";
+
+// MARK: - Delete Confirmation
+"delete.title" = "Supprimer l'élément ?";
+"delete.message" = "Cette action est irréversible.";
+"delete.confirm" = "Supprimer";
+
+// MARK: - Quick Switcher
+"quickswitcher.placeholder" = "Rechercher des éléments...";
+"quickswitcher.hint" = "Tapez pour rechercher, ↑↓ pour naviguer, ↵ pour sélectionner";
+
+// MARK: - Errors
+"error.vault.locked" = "Le coffre-fort est verrouillé";
+"error.vault.corrupted" = "Les données du coffre-fort sont corrompues";
+"error.vault.notfound" = "Coffre-fort introuvable";
+"error.network.offline" = "Pas de connexion Internet";
+"error.sync.conflict" = "Conflit de synchronisation détecté";
+"error.sync.failed" = "Échec de la synchronisation";
+
+// MARK: - Icon Picker
+"iconpicker.symbol" = "Symbole";
+"iconpicker.color" = "Couleur";
+
+// MARK: - Clipboard
+"clipboard.cleared" = "Presse-papiers effacé";
+"clipboard.copied" = "Copié dans le presse-papiers";

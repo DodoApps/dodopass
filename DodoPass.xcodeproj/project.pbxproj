@@ -11,6 +11,7 @@
 		B1000001 /* DodoPassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001; };
 		B1000002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000002; };
 		B1000003 /* AppCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000003; };
+		B1000004 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000004; };
 
 		/* Domain Models */
 		B1000101 /* VaultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000101; };
@@ -110,6 +111,7 @@
 		B2000001 /* DodoPassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DodoPassApp.swift; sourceTree = "<group>"; };
 		B2000002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2000003 /* AppCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommands.swift; sourceTree = "<group>"; };
+		B2000004 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 
 		/* Domain Models */
 		B2000101 /* VaultItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultItem.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				B2000001 /* DodoPassApp.swift */,
 				B2000002 /* AppDelegate.swift */,
 				B2000003 /* AppCommands.swift */,
+				B2000004 /* Localization.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -494,6 +497,10 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				tr,
+				fr,
+				es,
+				de,
 				Base,
 			);
 			mainGroup = B5000001 /* Root */;
@@ -525,6 +532,7 @@
 				B1000001 /* DodoPassApp.swift in Sources */,
 				B1000002 /* AppDelegate.swift in Sources */,
 				B1000003 /* AppCommands.swift in Sources */,
+				B1000004 /* Localization.swift in Sources */,
 				B1000101 /* VaultItem.swift in Sources */,
 				B1000102 /* LoginItem.swift in Sources */,
 				B1000103 /* SecureNote.swift in Sources */,

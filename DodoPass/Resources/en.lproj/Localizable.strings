@@ -1,0 +1,233 @@
+/* 
+  Localizable.strings
+  DodoPass - English (Base)
+*/
+
+// MARK: - General
+"app.name" = "DodoPass";
+"general.cancel" = "Cancel";
+"general.save" = "Save";
+"general.delete" = "Delete";
+"general.edit" = "Edit";
+"general.done" = "Done";
+"general.close" = "Close";
+"general.search" = "Search";
+"general.copy" = "Copy";
+"general.copied" = "Copied";
+"general.show" = "Show";
+"general.hide" = "Hide";
+"general.add" = "Add";
+"general.remove" = "Remove";
+"general.settings" = "Settings";
+"general.ok" = "OK";
+"general.error" = "Error";
+"general.warning" = "Warning";
+"general.success" = "Success";
+
+// MARK: - Lock Screen
+"lock.title" = "DodoPass";
+"lock.subtitle" = "Enter your master password";
+"lock.password.placeholder" = "Master password";
+"lock.unlock" = "Unlock";
+"lock.touchid" = "Unlock with Touch ID";
+"lock.touchid.reason" = "Unlock your vault";
+"lock.error.invalid" = "Invalid password";
+"lock.error.touchid" = "Touch ID failed";
+
+// MARK: - Onboarding
+"onboarding.welcome.title" = "Welcome to DodoPass";
+"onboarding.welcome.subtitle" = "A secure password manager for macOS";
+"onboarding.password.title" = "Create Master Password";
+"onboarding.password.subtitle" = "This password will protect all your data";
+"onboarding.password.placeholder" = "Enter master password";
+"onboarding.password.confirm" = "Confirm master password";
+"onboarding.password.hint" = "Password hint (optional)";
+"onboarding.password.strength.weak" = "Weak";
+"onboarding.password.strength.fair" = "Fair";
+"onboarding.password.strength.good" = "Good";
+"onboarding.password.strength.strong" = "Strong";
+"onboarding.touchid.title" = "Enable Touch ID";
+"onboarding.touchid.subtitle" = "Quickly unlock with your fingerprint";
+"onboarding.touchid.enable" = "Enable Touch ID";
+"onboarding.touchid.skip" = "Skip for now";
+"onboarding.icloud.title" = "iCloud Sync";
+"onboarding.icloud.subtitle" = "Sync your vault across devices";
+"onboarding.icloud.enable" = "Enable iCloud Sync";
+"onboarding.icloud.skip" = "Keep local only";
+"onboarding.complete.title" = "You're all set!";
+"onboarding.complete.subtitle" = "Your vault is ready to use";
+"onboarding.complete.start" = "Get Started";
+"onboarding.next" = "Next";
+"onboarding.back" = "Back";
+
+// MARK: - Sidebar
+"sidebar.all" = "All Items";
+"sidebar.favorites" = "Favorites";
+"sidebar.logins" = "Logins";
+"sidebar.securenotes" = "Secure Notes";
+"sidebar.creditcards" = "Credit Cards";
+"sidebar.identities" = "Identities";
+"sidebar.tags" = "Tags";
+"sidebar.trash" = "Trash";
+
+// MARK: - Item Types
+"item.type.login" = "Login";
+"item.type.securenote" = "Secure Note";
+"item.type.creditcard" = "Credit Card";
+"item.type.identity" = "Identity";
+
+// MARK: - Item List
+"itemlist.empty.title" = "No items yet";
+"itemlist.empty.subtitle" = "Add your first item to get started";
+"itemlist.search.placeholder" = "Search items...";
+"itemlist.search.noresults" = "No results found";
+
+// MARK: - Item Detail
+"itemdetail.title" = "Title";
+"itemdetail.username" = "Username";
+"itemdetail.password" = "Password";
+"itemdetail.website" = "Website";
+"itemdetail.websites" = "Website URLs";
+"itemdetail.notes" = "Notes";
+"itemdetail.tags" = "Tags";
+"itemdetail.created" = "Created";
+"itemdetail.modified" = "Modified";
+"itemdetail.favorite" = "Favorite";
+"itemdetail.copypassword" = "Copy Password";
+"itemdetail.copyusername" = "Copy Username";
+"itemdetail.openurl" = "Open URL";
+"itemdetail.passwordhistory" = "Password History";
+"itemdetail.passwordhistory.count" = "%d previous passwords";
+"itemdetail.otp" = "One-time Password";
+
+// MARK: - Item Editor
+"itemeditor.new.login" = "New login";
+"itemeditor.new.securenote" = "New secure note";
+"itemeditor.new.creditcard" = "New credit card";
+"itemeditor.new.identity" = "New identity";
+"itemeditor.edit.login" = "Edit login";
+"itemeditor.edit.securenote" = "Edit secure note";
+"itemeditor.edit.creditcard" = "Edit credit card";
+"itemeditor.edit.identity" = "Edit identity";
+"itemeditor.title.placeholder" = "Enter title";
+"itemeditor.username.placeholder" = "Enter username or email";
+"itemeditor.password.placeholder" = "Enter password";
+"itemeditor.url.placeholder" = "https://";
+"itemeditor.addurl" = "Add URL";
+"itemeditor.addtag" = "Add tag";
+
+// MARK: - Credit Card
+"creditcard.cardholder" = "Cardholder Name";
+"creditcard.number" = "Card Number";
+"creditcard.expiration" = "Expiration";
+"creditcard.cvv" = "CVV";
+"creditcard.pin" = "PIN";
+"creditcard.type" = "Type";
+"creditcard.billingaddress" = "Billing Address";
+
+// MARK: - Identity
+"identity.firstname" = "First Name";
+"identity.lastname" = "Last Name";
+"identity.fullname" = "Full Name";
+"identity.email" = "Email";
+"identity.phone" = "Phone";
+"identity.dateofbirth" = "Date of Birth";
+"identity.ssn" = "SSN";
+"identity.passport" = "Passport";
+"identity.driverlicense" = "Driver's License";
+"identity.address" = "Address";
+"identity.company" = "Company";
+"identity.jobtitle" = "Job Title";
+
+// MARK: - Secure Note
+"securenote.content" = "Content";
+"securenote.nocontent" = "No content";
+
+// MARK: - Password Generator
+"generator.title" = "Password Generator";
+"generator.length" = "Length";
+"generator.uppercase" = "Uppercase (A-Z)";
+"generator.lowercase" = "Lowercase (a-z)";
+"generator.numbers" = "Numbers (0-9)";
+"generator.symbols" = "Symbols (!@#$%)";
+"generator.generate" = "Generate";
+"generator.copy" = "Copy";
+"generator.use" = "Use Password";
+
+// MARK: - Settings
+"settings.title" = "Settings";
+"settings.general" = "General";
+"settings.security" = "Security";
+"settings.sync" = "Sync";
+"settings.about" = "About";
+"settings.general.language" = "Language";
+"settings.general.theme" = "Theme";
+"settings.general.theme.dark" = "Dark";
+"settings.general.theme.light" = "Light";
+"settings.general.theme.system" = "System";
+"settings.security.touchid" = "Touch ID";
+"settings.security.touchid.enable" = "Enable Touch ID";
+"settings.security.autolock" = "Auto-lock";
+"settings.security.autolock.immediately" = "Immediately";
+"settings.security.autolock.1min" = "After 1 minute";
+"settings.security.autolock.5min" = "After 5 minutes";
+"settings.security.autolock.15min" = "After 15 minutes";
+"settings.security.autolock.1hour" = "After 1 hour";
+"settings.security.autolock.never" = "Never";
+"settings.security.clipboard" = "Clear Clipboard";
+"settings.security.clipboard.30sec" = "After 30 seconds";
+"settings.security.clipboard.1min" = "After 1 minute";
+"settings.security.clipboard.never" = "Never";
+"settings.security.changepassword" = "Change Master Password";
+"settings.sync.icloud" = "iCloud Sync";
+"settings.sync.icloud.enable" = "Enable iCloud Sync";
+"settings.sync.status" = "Sync Status";
+"settings.sync.status.uptodate" = "Up to date";
+"settings.sync.status.syncing" = "Syncing...";
+"settings.sync.status.offline" = "Offline";
+"settings.sync.lastsync" = "Last synced";
+"settings.about.version" = "Version";
+"settings.about.github" = "GitHub";
+"settings.about.support" = "Support";
+
+// MARK: - Import/Export
+"importexport.export" = "Export";
+"importexport.import" = "Import";
+"importexport.export.title" = "Export Vault";
+"importexport.export.format" = "Format";
+"importexport.export.encrypted" = "DodoPass Encrypted";
+"importexport.export.json" = "DodoPass JSON";
+"importexport.export.csv" = "CSV (Unencrypted)";
+"importexport.export.password" = "Encryption Password";
+"importexport.export.warning" = "CSV export is unencrypted. Use only for migration.";
+"importexport.import.title" = "Import Data";
+"importexport.import.format" = "Format";
+"importexport.import.1password" = "1Password CSV";
+"importexport.import.chrome" = "Chrome CSV";
+"importexport.import.success" = "Successfully imported %d items";
+"importexport.import.error" = "Import failed";
+
+// MARK: - Delete Confirmation
+"delete.title" = "Delete Item?";
+"delete.message" = "This action cannot be undone.";
+"delete.confirm" = "Delete";
+
+// MARK: - Quick Switcher
+"quickswitcher.placeholder" = "Search items...";
+"quickswitcher.hint" = "Type to search, ↑↓ to navigate, ↵ to select";
+
+// MARK: - Errors
+"error.vault.locked" = "Vault is locked";
+"error.vault.corrupted" = "Vault data is corrupted";
+"error.vault.notfound" = "Vault not found";
+"error.network.offline" = "No internet connection";
+"error.sync.conflict" = "Sync conflict detected";
+"error.sync.failed" = "Sync failed";
+
+// MARK: - Icon Picker
+"iconpicker.symbol" = "Symbol";
+"iconpicker.color" = "Color";
+
+// MARK: - Clipboard
+"clipboard.cleared" = "Clipboard cleared";
+"clipboard.copied" = "Copied to clipboard";

@@ -1,0 +1,233 @@
+/* 
+  Localizable.strings
+  DodoPass - Spanish
+*/
+
+// MARK: - General
+"app.name" = "DodoPass";
+"general.cancel" = "Cancelar";
+"general.save" = "Guardar";
+"general.delete" = "Eliminar";
+"general.edit" = "Editar";
+"general.done" = "Listo";
+"general.close" = "Cerrar";
+"general.search" = "Buscar";
+"general.copy" = "Copiar";
+"general.copied" = "Copiado";
+"general.show" = "Mostrar";
+"general.hide" = "Ocultar";
+"general.add" = "Añadir";
+"general.remove" = "Eliminar";
+"general.settings" = "Ajustes";
+"general.ok" = "OK";
+"general.error" = "Error";
+"general.warning" = "Advertencia";
+"general.success" = "Éxito";
+
+// MARK: - Lock Screen
+"lock.title" = "DodoPass";
+"lock.subtitle" = "Introduce tu contraseña maestra";
+"lock.password.placeholder" = "Contraseña maestra";
+"lock.unlock" = "Desbloquear";
+"lock.touchid" = "Desbloquear con Touch ID";
+"lock.touchid.reason" = "Desbloquea tu bóveda";
+"lock.error.invalid" = "Contraseña inválida";
+"lock.error.touchid" = "Touch ID falló";
+
+// MARK: - Onboarding
+"onboarding.welcome.title" = "Bienvenido a DodoPass";
+"onboarding.welcome.subtitle" = "Un gestor de contraseñas seguro para macOS";
+"onboarding.password.title" = "Crear contraseña maestra";
+"onboarding.password.subtitle" = "Esta contraseña protegerá todos tus datos";
+"onboarding.password.placeholder" = "Introduce la contraseña maestra";
+"onboarding.password.confirm" = "Confirma la contraseña maestra";
+"onboarding.password.hint" = "Pista de contraseña (opcional)";
+"onboarding.password.strength.weak" = "Débil";
+"onboarding.password.strength.fair" = "Regular";
+"onboarding.password.strength.good" = "Buena";
+"onboarding.password.strength.strong" = "Fuerte";
+"onboarding.touchid.title" = "Activar Touch ID";
+"onboarding.touchid.subtitle" = "Desbloquea rápidamente con tu huella digital";
+"onboarding.touchid.enable" = "Activar Touch ID";
+"onboarding.touchid.skip" = "Omitir por ahora";
+"onboarding.icloud.title" = "Sincronización iCloud";
+"onboarding.icloud.subtitle" = "Sincroniza tu bóveda entre dispositivos";
+"onboarding.icloud.enable" = "Activar sincronización iCloud";
+"onboarding.icloud.skip" = "Mantener solo local";
+"onboarding.complete.title" = "¡Todo listo!";
+"onboarding.complete.subtitle" = "Tu bóveda está lista para usar";
+"onboarding.complete.start" = "Comenzar";
+"onboarding.next" = "Siguiente";
+"onboarding.back" = "Atrás";
+
+// MARK: - Sidebar
+"sidebar.all" = "Todos los elementos";
+"sidebar.favorites" = "Favoritos";
+"sidebar.logins" = "Inicios de sesión";
+"sidebar.securenotes" = "Notas seguras";
+"sidebar.creditcards" = "Tarjetas de crédito";
+"sidebar.identities" = "Identidades";
+"sidebar.tags" = "Etiquetas";
+"sidebar.trash" = "Papelera";
+
+// MARK: - Item Types
+"item.type.login" = "Inicio de sesión";
+"item.type.securenote" = "Nota segura";
+"item.type.creditcard" = "Tarjeta de crédito";
+"item.type.identity" = "Identidad";
+
+// MARK: - Item List
+"itemlist.empty.title" = "Sin elementos aún";
+"itemlist.empty.subtitle" = "Añade tu primer elemento para comenzar";
+"itemlist.search.placeholder" = "Buscar elementos...";
+"itemlist.search.noresults" = "No se encontraron resultados";
+
+// MARK: - Item Detail
+"itemdetail.title" = "Título";
+"itemdetail.username" = "Usuario";
+"itemdetail.password" = "Contraseña";
+"itemdetail.website" = "Sitio web";
+"itemdetail.websites" = "URLs de sitios web";
+"itemdetail.notes" = "Notas";
+"itemdetail.tags" = "Etiquetas";
+"itemdetail.created" = "Creado";
+"itemdetail.modified" = "Modificado";
+"itemdetail.favorite" = "Favorito";
+"itemdetail.copypassword" = "Copiar contraseña";
+"itemdetail.copyusername" = "Copiar usuario";
+"itemdetail.openurl" = "Abrir URL";
+"itemdetail.passwordhistory" = "Historial de contraseñas";
+"itemdetail.passwordhistory.count" = "%d contraseñas anteriores";
+"itemdetail.otp" = "Contraseña de un solo uso";
+
+// MARK: - Item Editor
+"itemeditor.new.login" = "Nuevo inicio de sesión";
+"itemeditor.new.securenote" = "Nueva nota segura";
+"itemeditor.new.creditcard" = "Nueva tarjeta de crédito";
+"itemeditor.new.identity" = "Nueva identidad";
+"itemeditor.edit.login" = "Editar inicio de sesión";
+"itemeditor.edit.securenote" = "Editar nota segura";
+"itemeditor.edit.creditcard" = "Editar tarjeta de crédito";
+"itemeditor.edit.identity" = "Editar identidad";
+"itemeditor.title.placeholder" = "Introduce el título";
+"itemeditor.username.placeholder" = "Introduce usuario o email";
+"itemeditor.password.placeholder" = "Introduce la contraseña";
+"itemeditor.url.placeholder" = "https://";
+"itemeditor.addurl" = "Añadir URL";
+"itemeditor.addtag" = "Añadir etiqueta";
+
+// MARK: - Credit Card
+"creditcard.cardholder" = "Nombre del titular";
+"creditcard.number" = "Número de tarjeta";
+"creditcard.expiration" = "Vencimiento";
+"creditcard.cvv" = "CVV";
+"creditcard.pin" = "PIN";
+"creditcard.type" = "Tipo";
+"creditcard.billingaddress" = "Dirección de facturación";
+
+// MARK: - Identity
+"identity.firstname" = "Nombre";
+"identity.lastname" = "Apellido";
+"identity.fullname" = "Nombre completo";
+"identity.email" = "Email";
+"identity.phone" = "Teléfono";
+"identity.dateofbirth" = "Fecha de nacimiento";
+"identity.ssn" = "Número de seguridad social";
+"identity.passport" = "Pasaporte";
+"identity.driverlicense" = "Licencia de conducir";
+"identity.address" = "Dirección";
+"identity.company" = "Empresa";
+"identity.jobtitle" = "Cargo";
+
+// MARK: - Secure Note
+"securenote.content" = "Contenido";
+"securenote.nocontent" = "Sin contenido";
+
+// MARK: - Password Generator
+"generator.title" = "Generador de contraseñas";
+"generator.length" = "Longitud";
+"generator.uppercase" = "Mayúsculas (A-Z)";
+"generator.lowercase" = "Minúsculas (a-z)";
+"generator.numbers" = "Números (0-9)";
+"generator.symbols" = "Símbolos (!@#$%)";
+"generator.generate" = "Generar";
+"generator.copy" = "Copiar";
+"generator.use" = "Usar contraseña";
+
+// MARK: - Settings
+"settings.title" = "Ajustes";
+"settings.general" = "General";
+"settings.security" = "Seguridad";
+"settings.sync" = "Sincronización";
+"settings.about" = "Acerca de";
+"settings.general.language" = "Idioma";
+"settings.general.theme" = "Tema";
+"settings.general.theme.dark" = "Oscuro";
+"settings.general.theme.light" = "Claro";
+"settings.general.theme.system" = "Sistema";
+"settings.security.touchid" = "Touch ID";
+"settings.security.touchid.enable" = "Activar Touch ID";
+"settings.security.autolock" = "Bloqueo automático";
+"settings.security.autolock.immediately" = "Inmediatamente";
+"settings.security.autolock.1min" = "Después de 1 minuto";
+"settings.security.autolock.5min" = "Después de 5 minutos";
+"settings.security.autolock.15min" = "Después de 15 minutos";
+"settings.security.autolock.1hour" = "Después de 1 hora";
+"settings.security.autolock.never" = "Nunca";
+"settings.security.clipboard" = "Limpiar portapapeles";
+"settings.security.clipboard.30sec" = "Después de 30 segundos";
+"settings.security.clipboard.1min" = "Después de 1 minuto";
+"settings.security.clipboard.never" = "Nunca";
+"settings.security.changepassword" = "Cambiar contraseña maestra";
+"settings.sync.icloud" = "Sincronización iCloud";
+"settings.sync.icloud.enable" = "Activar sincronización iCloud";
+"settings.sync.status" = "Estado de sincronización";
+"settings.sync.status.uptodate" = "Actualizado";
+"settings.sync.status.syncing" = "Sincronizando...";
+"settings.sync.status.offline" = "Sin conexión";
+"settings.sync.lastsync" = "Última sincronización";
+"settings.about.version" = "Versión";
+"settings.about.github" = "GitHub";
+"settings.about.support" = "Soporte";
+
+// MARK: - Import/Export
+"importexport.export" = "Exportar";
+"importexport.import" = "Importar";
+"importexport.export.title" = "Exportar bóveda";
+"importexport.export.format" = "Formato";
+"importexport.export.encrypted" = "DodoPass cifrado";
+"importexport.export.json" = "DodoPass JSON";
+"importexport.export.csv" = "CSV (Sin cifrar)";
+"importexport.export.password" = "Contraseña de cifrado";
+"importexport.export.warning" = "La exportación CSV no está cifrada. Usar solo para migración.";
+"importexport.import.title" = "Importar datos";
+"importexport.import.format" = "Formato";
+"importexport.import.1password" = "1Password CSV";
+"importexport.import.chrome" = "Chrome CSV";
+"importexport.import.success" = "%d elementos importados correctamente";
+"importexport.import.error" = "Error en la importación";
+
+// MARK: - Delete Confirmation
+"delete.title" = "¿Eliminar elemento?";
+"delete.message" = "Esta acción no se puede deshacer.";
+"delete.confirm" = "Eliminar";
+
+// MARK: - Quick Switcher
+"quickswitcher.placeholder" = "Buscar elementos...";
+"quickswitcher.hint" = "Escribe para buscar, ↑↓ para navegar, ↵ para seleccionar";
+
+// MARK: - Errors
+"error.vault.locked" = "La bóveda está bloqueada";
+"error.vault.corrupted" = "Los datos de la bóveda están dañados";
+"error.vault.notfound" = "Bóveda no encontrada";
+"error.network.offline" = "Sin conexión a Internet";
+"error.sync.conflict" = "Conflicto de sincronización detectado";
+"error.sync.failed" = "Error en la sincronización";
+
+// MARK: - Icon Picker
+"iconpicker.symbol" = "Símbolo";
+"iconpicker.color" = "Color";
+
+// MARK: - Clipboard
+"clipboard.cleared" = "Portapapeles limpiado";
+"clipboard.copied" = "Copiado al portapapeles";

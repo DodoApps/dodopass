@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Bundle Configuration -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- App Category -->
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.utilities</string>
+
+    <!-- Minimum System Version -->
+    <key>LSMinimumSystemVersion</key>
+    <string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+
+    <!-- App Icon -->
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+
+    <key>CFBundleIconName</key>
+    <string>AppIcon</string>
+
+    <!-- Principal Class -->
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+
+    <!-- High Resolution Capable -->
+    <key>NSHighResolutionCapable</key>
+    <true/>
+
+    <!-- Supports Automatic Graphics Switching -->
+    <key>NSSupportsAutomaticGraphicsSwitching</key>
+    <true/>
+
+    <!-- Touch ID Usage Description -->
+    <key>NSFaceIDUsageDescription</key>
+    <string>DodoPass uses Touch ID to quickly and securely unlock your vault.</string>
+
+    <!-- Document Types (for vault files) -->
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>DodoPass Vault</string>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>LSHandlerRank</key>
+            <string>Owner</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>com.dodopass.vault</string>
+            </array>
+        </dict>
+    </array>
+
+    <!-- UTI Declarations -->
+    <key>UTExportedTypeDeclarations</key>
+    <array>
+        <dict>
+            <key>UTTypeConformsTo</key>
+            <array>
+                <string>public.data</string>
+            </array>
+            <key>UTTypeDescription</key>
+            <string>DodoPass Vault Database</string>
+            <key>UTTypeIdentifier</key>
+            <string>com.dodopass.vault</string>
+            <key>UTTypeTagSpecification</key>
+            <dict>
+                <key>public.filename-extension</key>
+                <array>
+                    <string>vaultdb</string>
+                </array>
+            </dict>
+        </dict>
+    </array>
+
+    <!-- Background Modes -->
+    <key>NSAppleEventsUsageDescription</key>
+    <string>DodoPass may need to communicate with other apps for AutoFill functionality.</string>
+
+    <!-- Privacy - Keychain Usage -->
+    <key>NSKeychainUsageDescription</key>
+    <string>DodoPass uses the keychain to securely store your vault encryption key.</string>
+
+    <!-- iCloud Container -->
+    <key>NSUbiquitousContainers</key>
+    <dict>
+        <key>iCloud.com.dodopass.vault</key>
+        <dict>
+            <key>NSUbiquitousContainerIsDocumentScopePublic</key>
+            <false/>
+            <key>NSUbiquitousContainerName</key>
+            <string>DodoPass</string>
+            <key>NSUbiquitousContainerSupportedFolderLevels</key>
+            <string>One</string>
+        </dict>
+    </dict>
+</dict>
+</plist>

@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		/* App Sources */
+		B1000001 /* DodoPassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001; };
+		B1000002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000002; };
+		B1000003 /* AppCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000003; };
+
+		/* Domain Models */
+		B1000101 /* VaultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000101; };
+		B1000102 /* LoginItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000102; };
+		B1000103 /* SecureNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000103; };
+		B1000104 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000104; };
+		B1000105 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000105; };
+		B1000106 /* CustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000106; };
+		B1000107 /* VaultMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000107; };
+
+		/* Domain Services */
+		B1000201 /* VaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000201; };
+		B1000202 /* CryptoServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000202; };
+		B1000203 /* StorageServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000203; };
+		B1000204 /* SyncServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000204; };
+
+		/* Data - Crypto */
+		B1000301 /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000301; };
+		B1000302 /* KeyDerivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000302; };
+		B1000303 /* SecureMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000303; };
+		B1000304 /* CryptoConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000304; };
+
+		/* Data - Storage */
+		B1000401 /* VaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000401; };
+		B1000402 /* VaultFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000402; };
+		B1000403 /* VaultMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000403; };
+		B1000404 /* BackupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000404; };
+
+		/* Data - Keychain */
+		B1000501 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000501; };
+		B1000502 /* BiometricAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000502; };
+
+		/* Data - IPC */
+		B1000604 /* IPCServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000604; };
+
+		/* Data - ImportExport */
+		B1000605 /* ImportExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000605; };
+
+		/* Data - Sync */
+		B1000601 /* ICloudCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000601; };
+		B1000602 /* ConflictResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000602; };
+		B1000603 /* SyncStatusMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000603; };
+
+		/* UI - DesignSystem */
+		B1000701 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000701; };
+		B1000702 /* DodoColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000702; };
+		B1000703 /* DodoTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000703; };
+
+		/* UI - Components */
+		B1000801 /* SecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000801; };
+		B1000802 /* CopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000802; };
+		B1000803 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000803; };
+		B1000804 /* DetailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000804; };
+		B1000805 /* StatusPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000805; };
+		B1000806 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000806; };
+		B1000807 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000807; };
+		B1000808 /* PasswordGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000808; };
+		B1000809 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000809; };
+		B1000810 /* IconPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000810; };
+
+		/* UI - Screens */
+		B1000901 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000901; };
+		B1000902 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000902; };
+		B1000903 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000903; };
+		B1000904 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000904; };
+		B1000905 /* LockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000905; };
+		B1000906 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000906; };
+		B1000907 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000907; };
+		B1000908 /* QuickSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000908; };
+		B1000909 /* ItemEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000909; };
+
+		/* UI - ViewModels */
+		B1001001 /* VaultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2001001; };
+		B1001002 /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2001002; };
+		B1001003 /* ItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2001003; };
+		B1001004 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2001004; };
+		B1001005 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2001005; };
+
+		/* Managers */
+		B1001101 /* VaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2001101; };
+		B1001102 /* ClipboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2001102; };
+		B1001103 /* SearchIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2001103; };
+		B1001104 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2001104; };
+		B1001105 /* AuditLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2001105; };
+		B1001106 /* TOTPGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2001106; };
+		B1001107 /* BreachChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2001107; };
+
+		/* Resources */
+		B1001201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2001201; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		/* Products */
+		B3000001 /* DodoPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DodoPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+
+		/* App Sources */
+		B2000001 /* DodoPassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DodoPassApp.swift; sourceTree = "<group>"; };
+		B2000002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2000003 /* AppCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommands.swift; sourceTree = "<group>"; };
+
+		/* Domain Models */
+		B2000101 /* VaultItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultItem.swift; sourceTree = "<group>"; };
+		B2000102 /* LoginItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItem.swift; sourceTree = "<group>"; };
+		B2000103 /* SecureNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureNote.swift; sourceTree = "<group>"; };
+		B2000104 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		B2000105 /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		B2000106 /* CustomField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomField.swift; sourceTree = "<group>"; };
+		B2000107 /* VaultMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultMetadata.swift; sourceTree = "<group>"; };
+
+		/* Domain Services */
+		B2000201 /* VaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultService.swift; sourceTree = "<group>"; };
+		B2000202 /* CryptoServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoServiceProtocol.swift; sourceTree = "<group>"; };
+		B2000203 /* StorageServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageServiceProtocol.swift; sourceTree = "<group>"; };
+		B2000204 /* SyncServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncServiceProtocol.swift; sourceTree = "<group>"; };
+
+		/* Data - Crypto */
+		B2000301 /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
+		B2000302 /* KeyDerivation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDerivation.swift; sourceTree = "<group>"; };
+		B2000303 /* SecureMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureMemory.swift; sourceTree = "<group>"; };
+		B2000304 /* CryptoConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoConstants.swift; sourceTree = "<group>"; };
+
+		/* Data - Storage */
+		B2000401 /* VaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultStorage.swift; sourceTree = "<group>"; };
+		B2000402 /* VaultFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultFormat.swift; sourceTree = "<group>"; };
+		B2000403 /* VaultMigration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultMigration.swift; sourceTree = "<group>"; };
+		B2000404 /* BackupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupManager.swift; sourceTree = "<group>"; };
+
+		/* Data - Keychain */
+		B2000501 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		B2000502 /* BiometricAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuth.swift; sourceTree = "<group>"; };
+
+		/* Data - IPC */
+		B2000604 /* IPCServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPCServer.swift; sourceTree = "<group>"; };
+		B2000605 /* ImportExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportService.swift; sourceTree = "<group>"; };
+
+		/* Data - Sync */
+		B2000601 /* ICloudCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICloudCoordinator.swift; sourceTree = "<group>"; };
+		B2000602 /* ConflictResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConflictResolver.swift; sourceTree = "<group>"; };
+		B2000603 /* SyncStatusMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStatusMonitor.swift; sourceTree = "<group>"; };
+
+		/* UI - DesignSystem */
+		B2000701 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B2000702 /* DodoColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DodoColors.swift; sourceTree = "<group>"; };
+		B2000703 /* DodoTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DodoTypography.swift; sourceTree = "<group>"; };
+
+		/* UI - Components */
+		B2000801 /* SecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureField.swift; sourceTree = "<group>"; };
+		B2000802 /* CopyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyButton.swift; sourceTree = "<group>"; };
+		B2000803 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		B2000804 /* DetailField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailField.swift; sourceTree = "<group>"; };
+		B2000805 /* StatusPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPill.swift; sourceTree = "<group>"; };
+		B2000806 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		B2000807 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		B2000808 /* PasswordGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratorView.swift; sourceTree = "<group>"; };
+		B2000809 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		B2000810 /* IconPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPicker.swift; sourceTree = "<group>"; };
+
+		/* UI - Screens */
+		B2000901 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B2000902 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		B2000903 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		B2000904 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		B2000905 /* LockScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreen.swift; sourceTree = "<group>"; };
+		B2000906 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B2000907 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B2000908 /* QuickSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSwitcher.swift; sourceTree = "<group>"; };
+		B2000909 /* ItemEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEditorView.swift; sourceTree = "<group>"; };
+
+		/* UI - ViewModels */
+		B2001001 /* VaultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultViewModel.swift; sourceTree = "<group>"; };
+		B2001002 /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
+		B2001003 /* ItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewModel.swift; sourceTree = "<group>"; };
+		B2001004 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		B2001005 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+
+		/* Managers */
+		B2001101 /* VaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultManager.swift; sourceTree = "<group>"; };
+		B2001102 /* ClipboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardManager.swift; sourceTree = "<group>"; };
+		B2001103 /* SearchIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIndex.swift; sourceTree = "<group>"; };
+		B2001104 /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
+		B2001105 /* AuditLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditLogger.swift; sourceTree = "<group>"; };
+		B2001106 /* TOTPGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOTPGenerator.swift; sourceTree = "<group>"; };
+		B2001107 /* BreachChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreachChecker.swift; sourceTree = "<group>"; };
+
+		/* Resources */
+		B2001201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2001202 /* DodoPass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DodoPass.entitlements; sourceTree = "<group>"; };
+		B2001203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5000001 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				B5000002 /* DodoPass */,
+				B5000099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5000099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3000001 /* DodoPass.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5000002 /* DodoPass */ = {
+			isa = PBXGroup;
+			children = (
+				B5000003 /* Sources */,
+				B5000050 /* Resources */,
+			);
+			path = DodoPass;
+			sourceTree = "<group>";
+		};
+		B5000003 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B5000004 /* App */,
+				B5000005 /* Domain */,
+				B5000008 /* Data */,
+				B5000012 /* UI */,
+				B5000020 /* Managers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B5000004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B2000001 /* DodoPassApp.swift */,
+				B2000002 /* AppDelegate.swift */,
+				B2000003 /* AppCommands.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B5000005 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B5000006 /* Models */,
+				B5000007 /* Services */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B5000006 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2000101 /* VaultItem.swift */,
+				B2000102 /* LoginItem.swift */,
+				B2000103 /* SecureNote.swift */,
+				B2000104 /* CreditCard.swift */,
+				B2000105 /* Identity.swift */,
+				B2000106 /* CustomField.swift */,
+				B2000107 /* VaultMetadata.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5000007 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B2000201 /* VaultService.swift */,
+				B2000202 /* CryptoServiceProtocol.swift */,
+				B2000203 /* StorageServiceProtocol.swift */,
+				B2000204 /* SyncServiceProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B5000008 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B5000009 /* Crypto */,
+				B5000010 /* Storage */,
+				B5000011 /* Keychain */,
+				B5000019 /* Sync */,
+				B5000021 /* IPC */,
+				B5000022 /* ImportExport */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B5000021 /* IPC */ = {
+			isa = PBXGroup;
+			children = (
+				B2000604 /* IPCServer.swift */,
+			);
+			path = IPC;
+			sourceTree = "<group>";
+		};
+		B5000022 /* ImportExport */ = {
+			isa = PBXGroup;
+			children = (
+				B2000605 /* ImportExportService.swift */,
+			);
+			path = ImportExport;
+			sourceTree = "<group>";
+		};
+		B5000009 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				B2000301 /* CryptoService.swift */,
+				B2000302 /* KeyDerivation.swift */,
+				B2000303 /* SecureMemory.swift */,
+				B2000304 /* CryptoConstants.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		B5000010 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B2000401 /* VaultStorage.swift */,
+				B2000402 /* VaultFormat.swift */,
+				B2000403 /* VaultMigration.swift */,
+				B2000404 /* BackupManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		B5000011 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				B2000501 /* KeychainService.swift */,
+				B2000502 /* BiometricAuth.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		B5000019 /* Sync */ = {
+			isa = PBXGroup;
+			children = (
+				B2000601 /* ICloudCoordinator.swift */,
+				B2000602 /* ConflictResolver.swift */,
+				B2000603 /* SyncStatusMonitor.swift */,
+			);
+			path = Sync;
+			sourceTree = "<group>";
+		};
+		B5000012 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B5000013 /* DesignSystem */,
+				B5000014 /* Components */,
+				B5000015 /* Screens */,
+				B5000016 /* ViewModels */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B5000013 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				B2000701 /* Theme.swift */,
+				B2000702 /* DodoColors.swift */,
+				B2000703 /* DodoTypography.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		B5000014 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B2000801 /* SecureField.swift */,
+				B2000802 /* CopyButton.swift */,
+				B2000803 /* ItemRow.swift */,
+				B2000804 /* DetailField.swift */,
+				B2000805 /* StatusPill.swift */,
+				B2000806 /* ToastView.swift */,
+				B2000807 /* SearchBar.swift */,
+				B2000808 /* PasswordGeneratorView.swift */,
+				B2000809 /* EmptyStateView.swift */,
+				B2000810 /* IconPicker.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B5000015 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B2000901 /* MainView.swift */,
+				B2000902 /* SidebarView.swift */,
+				B2000903 /* ItemListView.swift */,
+				B2000904 /* ItemDetailView.swift */,
+				B2000905 /* LockScreen.swift */,
+				B2000906 /* OnboardingView.swift */,
+				B2000907 /* SettingsView.swift */,
+				B2000908 /* QuickSwitcher.swift */,
+				B2000909 /* ItemEditorView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B5000016 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B2001001 /* VaultViewModel.swift */,
+				B2001002 /* ItemListViewModel.swift */,
+				B2001003 /* ItemDetailViewModel.swift */,
+				B2001004 /* SettingsViewModel.swift */,
+				B2001005 /* SearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B5000020 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B2001101 /* VaultManager.swift */,
+				B2001102 /* ClipboardManager.swift */,
+				B2001103 /* SearchIndex.swift */,
+				B2001104 /* PasswordGenerator.swift */,
+				B2001105 /* AuditLogger.swift */,
+				B2001106 /* TOTPGenerator.swift */,
+				B2001107 /* BreachChecker.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B5000050 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2001201 /* Assets.xcassets */,
+				B2001202 /* DodoPass.entitlements */,
+				B2001203 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6000001 /* DodoPass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7000001 /* Build configuration list for PBXNativeTarget "DodoPass" */;
+			buildPhases = (
+				B8000001 /* Sources */,
+				B4000001 /* Frameworks */,
+				B9000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DodoPass;
+			productName = DodoPass;
+			productReference = B3000001 /* DodoPass.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B6000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = BB000001 /* Build configuration list for PBXProject "DodoPass" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5000001 /* Root */;
+			productRefGroup = B5000099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6000001 /* DodoPass */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1001201 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1000001 /* DodoPassApp.swift in Sources */,
+				B1000002 /* AppDelegate.swift in Sources */,
+				B1000003 /* AppCommands.swift in Sources */,
+				B1000101 /* VaultItem.swift in Sources */,
+				B1000102 /* LoginItem.swift in Sources */,
+				B1000103 /* SecureNote.swift in Sources */,
+				B1000104 /* CreditCard.swift in Sources */,
+				B1000105 /* Identity.swift in Sources */,
+				B1000106 /* CustomField.swift in Sources */,
+				B1000107 /* VaultMetadata.swift in Sources */,
+				B1000201 /* VaultService.swift in Sources */,
+				B1000202 /* CryptoServiceProtocol.swift in Sources */,
+				B1000203 /* StorageServiceProtocol.swift in Sources */,
+				B1000204 /* SyncServiceProtocol.swift in Sources */,
+				B1000301 /* CryptoService.swift in Sources */,
+				B1000302 /* KeyDerivation.swift in Sources */,
+				B1000303 /* SecureMemory.swift in Sources */,
+				B1000304 /* CryptoConstants.swift in Sources */,
+				B1000401 /* VaultStorage.swift in Sources */,
+				B1000402 /* VaultFormat.swift in Sources */,
+				B1000403 /* VaultMigration.swift in Sources */,
+				B1000404 /* BackupManager.swift in Sources */,
+				B1000501 /* KeychainService.swift in Sources */,
+				B1000502 /* BiometricAuth.swift in Sources */,
+				B1000601 /* ICloudCoordinator.swift in Sources */,
+				B1000602 /* ConflictResolver.swift in Sources */,
+				B1000603 /* SyncStatusMonitor.swift in Sources */,
+				B1000604 /* IPCServer.swift in Sources */,
+				B1000605 /* ImportExportService.swift in Sources */,
+				B1000701 /* Theme.swift in Sources */,
+				B1000702 /* DodoColors.swift in Sources */,
+				B1000703 /* DodoTypography.swift in Sources */,
+				B1000801 /* SecureField.swift in Sources */,
+				B1000802 /* CopyButton.swift in Sources */,
+				B1000803 /* ItemRow.swift in Sources */,
+				B1000804 /* DetailField.swift in Sources */,
+				B1000805 /* StatusPill.swift in Sources */,
+				B1000806 /* ToastView.swift in Sources */,
+				B1000807 /* SearchBar.swift in Sources */,
+				B1000808 /* PasswordGeneratorView.swift in Sources */,
+				B1000809 /* EmptyStateView.swift in Sources */,
+				B1000810 /* IconPicker.swift in Sources */,
+				B1000901 /* MainView.swift in Sources */,
+				B1000902 /* SidebarView.swift in Sources */,
+				B1000903 /* ItemListView.swift in Sources */,
+				B1000904 /* ItemDetailView.swift in Sources */,
+				B1000905 /* LockScreen.swift in Sources */,
+				B1000906 /* OnboardingView.swift in Sources */,
+				B1000907 /* SettingsView.swift in Sources */,
+				B1000908 /* QuickSwitcher.swift in Sources */,
+				B1000909 /* ItemEditorView.swift in Sources */,
+				B1001001 /* VaultViewModel.swift in Sources */,
+				B1001002 /* ItemListViewModel.swift in Sources */,
+				B1001003 /* ItemDetailViewModel.swift in Sources */,
+				B1001004 /* SettingsViewModel.swift in Sources */,
+				B1001005 /* SearchViewModel.swift in Sources */,
+				B1001101 /* VaultManager.swift in Sources */,
+				B1001102 /* ClipboardManager.swift in Sources */,
+				B1001103 /* SearchIndex.swift in Sources */,
+				B1001104 /* PasswordGenerator.swift in Sources */,
+				B1001105 /* AuditLogger.swift in Sources */,
+				B1001106 /* TOTPGenerator.swift in Sources */,
+				B1001107 /* BreachChecker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BC000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BD000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DodoPass/Resources/DodoPass.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DodoPass/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DodoPass;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dodopass.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BD000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DodoPass/Resources/DodoPass.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DodoPass/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DodoPass;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dodopass.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB000001 /* Build configuration list for PBXProject "DodoPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC000001 /* Debug */,
+				BC000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7000001 /* Build configuration list for PBXNativeTarget "DodoPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD000001 /* Debug */,
+				BD000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA000001 /* Project object */;
+}

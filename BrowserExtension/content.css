@@ -1,0 +1,406 @@
+/* DodoPass Browser Extension - Content Script Styles */
+
+/* Inline autofill dropdown */
+.dodopass-dropdown {
+  position: absolute;
+  z-index: 2147483647;
+  background: #1A1A1A;
+  border: 1px solid #3A3A3A;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  min-width: 280px;
+  max-width: 360px;
+  max-height: 320px;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.dodopass-dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: #242424;
+  border-bottom: 1px solid #3A3A3A;
+}
+
+.dodopass-dropdown-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4A9FFF;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.dodopass-dropdown-logo svg {
+  width: 18px;
+  height: 18px;
+}
+
+.dodopass-dropdown-close {
+  background: none;
+  border: none;
+  color: #707070;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dodopass-dropdown-close:hover {
+  background: #3A3A3A;
+  color: #FFFFFF;
+}
+
+.dodopass-dropdown-list {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.dodopass-dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  cursor: pointer;
+  border-left: 2px solid transparent;
+  transition: background-color 0.1s;
+}
+
+.dodopass-dropdown-item:hover {
+  background: #2E2E2E;
+}
+
+.dodopass-dropdown-item.selected {
+  background: #2E2E2E;
+  border-left-color: #4A9FFF;
+}
+
+.dodopass-dropdown-item-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: #3A3A3A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: #4A9FFF;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.dodopass-dropdown-item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.dodopass-dropdown-item-title {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #FFFFFF;
+}
+
+.dodopass-dropdown-item-subtitle {
+  font-size: 11px;
+  color: #A0A0A0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dodopass-dropdown-empty {
+  padding: 20px;
+  text-align: center;
+  color: #707070;
+}
+
+.dodopass-dropdown-footer {
+  padding: 8px 12px;
+  background: #242424;
+  border-top: 1px solid #3A3A3A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dodopass-dropdown-shortcut {
+  font-size: 10px;
+  color: #707070;
+}
+
+.dodopass-dropdown-shortcut kbd {
+  background: #3A3A3A;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: inherit;
+  margin: 0 2px;
+}
+
+/* Locked state */
+.dodopass-dropdown-locked {
+  padding: 20px;
+  text-align: center;
+}
+
+.dodopass-dropdown-locked svg {
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.dodopass-dropdown-locked p {
+  color: #A0A0A0;
+  margin: 0;
+}
+
+.dodopass-dropdown-locked .hint {
+  font-size: 11px;
+  color: #707070;
+  margin-top: 4px;
+}
+
+/* Save password banner */
+.dodopass-save-banner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2147483647;
+  background: #1A1A1A;
+  border: 1px solid #3A3A3A;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  width: 320px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  color: #FFFFFF;
+  animation: dodopass-slide-in 0.2s ease-out;
+}
+
+@keyframes dodopass-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.dodopass-save-banner-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.dodopass-save-banner-header svg {
+  color: #4A9FFF;
+}
+
+.dodopass-save-banner-header span {
+  font-weight: 600;
+}
+
+.dodopass-save-banner-close {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #707070;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.dodopass-save-banner-content {
+  margin-bottom: 12px;
+}
+
+.dodopass-save-banner-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #2E2E2E;
+}
+
+.dodopass-save-banner-field:last-child {
+  border-bottom: none;
+}
+
+.dodopass-save-banner-label {
+  color: #707070;
+  font-size: 11px;
+}
+
+.dodopass-save-banner-value {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.dodopass-save-banner-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.dodopass-save-banner-btn {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background-color 0.1s;
+}
+
+.dodopass-save-banner-btn.primary {
+  background: #4A9FFF;
+  color: #FFFFFF;
+}
+
+.dodopass-save-banner-btn.primary:hover {
+  background: #3A8FEF;
+}
+
+.dodopass-save-banner-btn.secondary {
+  background: #3A3A3A;
+  color: #A0A0A0;
+}
+
+.dodopass-save-banner-btn.secondary:hover {
+  background: #4A4A4A;
+  color: #FFFFFF;
+}
+
+/* Input field icon */
+.dodopass-field-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+  z-index: 10000;
+}
+
+.dodopass-field-icon:hover {
+  opacity: 1;
+}
+
+/* Scrollbar for dropdown */
+.dodopass-dropdown-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dodopass-dropdown-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dodopass-dropdown-list::-webkit-scrollbar-thumb {
+  background: #3A3A3A;
+  border-radius: 3px;
+}
+
+.dodopass-dropdown-list::-webkit-scrollbar-thumb:hover {
+  background: #4A4A4A;
+}
+
+/* TOTP badge and button */
+.dodopass-dropdown-totp-badge {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 600;
+  background: #2D5A3D;
+  color: #6FCF97;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-top: 3px;
+  letter-spacing: 0.5px;
+}
+
+.dodopass-dropdown-totp-btn {
+  background: #2D5A3D;
+  border: none;
+  color: #6FCF97;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 8px;
+  flex-shrink: 0;
+  transition: background-color 0.15s;
+}
+
+.dodopass-dropdown-totp-btn:hover {
+  background: #3D6A4D;
+}
+
+/* Toast notification */
+.dodopass-toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: #1A1A1A;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid #3A3A3A;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  z-index: 2147483647;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.dodopass-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Password security warnings */
+.dodopass-save-banner-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.dodopass-save-banner-warning .warning-icon {
+  flex-shrink: 0;
+}
+
+.dodopass-save-banner-warning.breach {
+  background: rgba(255, 69, 58, 0.15);
+  color: #FF6961;
+  border: 1px solid rgba(255, 69, 58, 0.3);
+}
+
+.dodopass-save-banner-warning.weak {
+  background: rgba(255, 149, 0, 0.15);
+  color: #FFB347;
+  border: 1px solid rgba(255, 149, 0, 0.3);
+}
+
+.dodopass-save-banner-warning.fair {
+  background: rgba(255, 204, 0, 0.1);
+  color: #FFD700;
+  border: 1px solid rgba(255, 204, 0, 0.2);
+}

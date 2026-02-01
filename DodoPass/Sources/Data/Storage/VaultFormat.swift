@@ -105,7 +105,11 @@ enum VaultFormat {
 
         // Read version
         let versionBytes = data[offset..<offset + 4]
-        let version = versionBytes.withUnsafeBytes { $0.load(as: UInt32.self) }.littleEndian
+        var versionValue: UInt32 = 0
+        _ = Swift.withUnsafeMutableBytes(of: &versionValue) { dest in
+            versionBytes.copyBytes(to: dest)
+        }
+        let version = UInt32(littleEndian: versionValue)
         guard version <= CryptoConstants.currentFormatVersion else {
             throw FormatError.unsupportedVersion(version: version)
         }
@@ -151,8 +155,13 @@ enum VaultFormat {
             throw FormatError.insufficientData
         }
 
+        // Safely read the length value without alignment issues
         let lengthBytes = data[offset..<offset + 4]
-        let length = lengthBytes.withUnsafeBytes { $0.load(as: UInt32.self) }.littleEndian
+        var lengthValue: UInt32 = 0
+        _ = Swift.withUnsafeMutableBytes(of: &lengthValue) { dest in
+            lengthBytes.copyBytes(to: dest)
+        }
+        let length = UInt32(littleEndian: lengthValue)
 
         let dataStart = offset + 4
         let dataEnd = dataStart + Int(length)
